@@ -16,7 +16,7 @@ Pour installer le programme, il suffit de cloner le dépôt Git et d'installer l
 
 ```
 git clone https://github.com/martinoyovo/data-preprocessing-pipeline.git
-data-preprocessing-pipeline
+cd data-preprocessing-pipeline
 
 # Installer les dépendances
 pip install -r requirements.txt
