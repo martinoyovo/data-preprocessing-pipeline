@@ -10,4 +10,15 @@ def load_data(data_path):
     return data
 
 
+def clean_data(data):
+    """Nettoie les données."""
+    # Supprime les valeurs manquantes
+    data.dropna(inplace=True)
+
+    # Convertit les données catégorielles en variables numériques
+    data = pd.get_dummies(data)
+
+    return data
+
+
 
