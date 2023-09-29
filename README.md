@@ -32,7 +32,7 @@ python -m github_actions.workflow
 
 Cette commande exécutera le workflow GitHub Actions, qui effectue les tâches suivantes :
 
-* Télécharge le fichier `dataset.csv` dans le répertoire `data/raw`
+* Télécharge le fichier `data.csv` dans le répertoire `data/raw`
 
 **Arborescence du projet**
 
