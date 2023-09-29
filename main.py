@@ -32,3 +32,13 @@ def reduce_data(data):
     return data
 
 
+def feature_engineering(data):
+    """Effectue du feature engineering."""
+    # calculer le ratio valence-energy,
+    data["valence_energy_ratio"] = data["valence"] / data["energy"]
+    # calculer le ratio durée-dancabilité,
+    data["duration_danceability_ratio"] = data["duration"] / data["danceability"]
+
+    return data
+
+
