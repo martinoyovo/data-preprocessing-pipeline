@@ -52,4 +52,23 @@ def display_statistics(data):
     plt.show()
 
 
+def main():
+    """Exécute le programme."""
+    # Charge les données brutes
+    data = load_data("data/raw/data.csv")
 
+    # Nettoie les données
+    data = clean_data(data)
+
+    # Réduit les données
+    data = reduce_data(data)
+
+    # Effectue du feature engineering
+    data = feature_engineering(data)
+
+    # Affiche quelques statistiques sommaires
+    display_statistics(data)
+
+
+if __name__ == "__main__":
+    main()
