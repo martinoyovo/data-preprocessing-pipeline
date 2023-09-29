@@ -42,3 +42,14 @@ def feature_engineering(data):
     return data
 
 
+def display_statistics(data):
+    """Affiche quelques statistiques sommaires relatives aux données."""
+    # Affiche la description des données
+    print(data.describe())
+
+    # Affiche la distribution des variables
+    data.hist()
+    plt.show()
+
+
+
