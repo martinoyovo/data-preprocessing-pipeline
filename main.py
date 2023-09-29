@@ -21,4 +21,14 @@ def clean_data(data):
     return data
 
 
+def reduce_data(data):
+    """Réduit les données."""
+    # Sélectionne les variables les plus importantes
+    data = data[data.corr()["target"] > 0.2]
+
+    # Sélectionne les données les plus représentatives
+    data = data.sample(frac=0.1)
+
+    return data
+
 
