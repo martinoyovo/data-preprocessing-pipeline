@@ -16,7 +16,7 @@ def clean_data(data):
     data.dropna(inplace=True)
 
     # Convertit les données catégorielles en variables numériques
-    data = pd.get_dummies(data)
+    #data = pd.get_dummies(data)
 
     return data
 
