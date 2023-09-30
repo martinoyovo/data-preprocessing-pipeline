@@ -1,7 +1,7 @@
 #YOVO, KOSSI MARTINO, MASTER 2 DIT
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 
 def load_data(data_path):
@@ -16,7 +16,7 @@ def clean_data(data):
     data.dropna(inplace=True)
 
     # Convertit les données catégorielles en variables numériques
-    #data = pd.get_dummies(data)
+    data = pd.get_dummies(data)
 
     return data
 
@@ -24,10 +24,10 @@ def clean_data(data):
 def reduce_data(data):
     """Réduit les données."""
     # Sélectionne les variables les plus importantes
-    #data = data[data.corr()["target"] > 0.2]
+    data = data[data.corr()["target"] > 0.2]
 
     # Sélectionne les données les plus représentatives
-    #data = data.sample(frac=0.1)
+    data = data.sample(frac=0.1)
 
     return data
 
