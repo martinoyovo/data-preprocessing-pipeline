@@ -1,58 +1,63 @@
-**Data  Preprocessing  Program**
+## **Data Preprocessing Program**
 
-**What is it about ?**
+### **What is it about?**
 
-Ce programme permet d'effectuer les tâches classiques à effectuer avant une analyse de données, à savoir :
+This program performs the common tasks that need to be done before data analysis, namely:
 
-* Récupérer un jeu de données
-* Nettoyer les données
-* Réduire les données
-* Faire du feature engineering
-* Afficher quelques statistiques sommaires relatives aux données
+* Retrieve a dataset
+* Clean the data
+* Reduce the data
+* Perform feature engineering
+* Display some summary statistics related to the data
 
-**Installation**
+---
 
-Pour installer le programme, il suffit de cloner le dépôt Git et d'installer les dépendances :
+### **Installation**
 
-```
+To install the program, simply clone the Git repository and install the dependencies:
+
+```bash
 git clone https://github.com/martinoyovo/data-preprocessing-pipeline.git
 cd data-preprocessing-pipeline
 
-# Installer les dépendances
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-**Utilisation**
+---
 
-Pour utiliser le programme, il suffit d'exécuter la commande suivante :
+### **Usage**
 
-```
+To use the program, simply run the following command:
+
+```bash
 python -m github_actions.workflow
 ```
 
-Cette commande exécutera le workflow GitHub Actions, qui effectue les tâches suivantes :
+This command will execute the GitHub Actions workflow, which performs the following tasks:
 
-* Télécharge le fichier `data.csv` dans le répertoire `data/raw`
+* Downloads the `data.csv` file into the `data/raw` directory
 
-**Arborescence du projet**
+---
 
-Le projet est organisé de la manière suivante :
+### **Project Structure**
+
+The project is organized as follows:
 
 ```
 .
 ├── data
-│   ├── raw
-│   │   └── dataset.csv
-│   └── cleaned
-│       └── dataset_cleaned.csv
+│   ├── raw
+│   │   └── dataset.csv
+│   └── cleaned
+│       └── dataset_cleaned.csv
 ├── processed
-│   └── dataset_processed.csv
+│   └── dataset_processed.csv
 ├── reports
-│   └── stats.txt
+│   └── stats.txt
 ├── requirements.txt
 ├── src
-│   ├── process.py
-│   └── train.py
+│   ├── process.py
+│   └── train.py
 └── README.md
 ```
-
